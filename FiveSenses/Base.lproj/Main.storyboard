@@ -163,14 +163,36 @@
                     <view key="view" contentMode="scaleToFill" id="vQz-8O-W1X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMv-dQ-JlV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                                <color key="backgroundColor" name="cream"/>
+                                <color key="tintColor" name="blue"/>
+                                <items>
+                                    <navigationItem title="MapKit" id="CTj-gn-Z36"/>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9O-8x-Xqo">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N9O-8x-Xqo" firstAttribute="trailing" secondItem="aTU-sE-faI" secondAttribute="trailing" id="5ID-iK-LBH"/>
+                            <constraint firstItem="LMv-dQ-JlV" firstAttribute="leading" secondItem="aTU-sE-faI" secondAttribute="leading" id="Mc1-fa-kQ9"/>
+                            <constraint firstItem="N9O-8x-Xqo" firstAttribute="top" secondItem="LMv-dQ-JlV" secondAttribute="bottom" id="dYT-5G-AuO"/>
+                            <constraint firstItem="LMv-dQ-JlV" firstAttribute="top" secondItem="aTU-sE-faI" secondAttribute="top" id="eKi-Oc-sMa"/>
+                            <constraint firstItem="N9O-8x-Xqo" firstAttribute="leading" secondItem="aTU-sE-faI" secondAttribute="leading" id="i3C-5O-LbE"/>
+                            <constraint firstItem="LMv-dQ-JlV" firstAttribute="trailing" secondItem="aTU-sE-faI" secondAttribute="trailing" id="jOw-2A-emI"/>
+                            <constraint firstItem="N9O-8x-Xqo" firstAttribute="bottom" secondItem="aTU-sE-faI" secondAttribute="bottom" id="qjH-hq-FCG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aTU-sE-faI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Maps" image="globe" id="12l-Oy-kFm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lP-A8-0Gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="404"/>
+            <point key="canvasLocation" x="1696.8" y="403.44827586206901"/>
         </scene>
     </scenes>
     <resources>
