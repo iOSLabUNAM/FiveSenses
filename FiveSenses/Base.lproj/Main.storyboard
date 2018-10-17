@@ -39,7 +39,22 @@
                     <view key="view" contentMode="scaleToFill" id="UKx-8q-ICd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-Y4-mWO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                                <color key="backgroundColor" name="cream"/>
+                                <color key="tintColor" name="blue"/>
+                                <items>
+                                    <navigationItem title="Acelerometer" id="LIh-6d-sHc"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j4B-Y4-mWO" firstAttribute="leading" secondItem="516-cG-iY7" secondAttribute="leading" id="3Tz-XV-6i8"/>
+                            <constraint firstItem="j4B-Y4-mWO" firstAttribute="top" secondItem="516-cG-iY7" secondAttribute="top" id="aaf-om-ijy"/>
+                            <constraint firstItem="j4B-Y4-mWO" firstAttribute="trailing" secondItem="516-cG-iY7" secondAttribute="trailing" id="cra-nm-RJE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="516-cG-iY7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acelerometer" image="dashboard" id="cDP-HY-rTU"/>
@@ -55,7 +70,22 @@
                     <view key="view" contentMode="scaleToFill" id="m08-Q7-kwy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-7f-Kfr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                                <color key="backgroundColor" name="cream"/>
+                                <color key="tintColor" name="blue"/>
+                                <items>
+                                    <navigationItem title="Location" id="RLh-rg-Pym"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rz3-7f-Kfr" firstAttribute="top" secondItem="BZX-Tz-bo7" secondAttribute="top" id="3Kx-Bq-BOo"/>
+                            <constraint firstItem="rz3-7f-Kfr" firstAttribute="trailing" secondItem="BZX-Tz-bo7" secondAttribute="trailing" id="egE-dF-R1K"/>
+                            <constraint firstItem="rz3-7f-Kfr" firstAttribute="leading" secondItem="BZX-Tz-bo7" secondAttribute="leading" id="z0G-vl-2tr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BZX-Tz-bo7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="geo_fence" id="E50-RK-Ei6"/>
@@ -71,7 +101,22 @@
                     <view key="view" contentMode="scaleToFill" id="MzS-Wd-YJw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfC-Cr-p73">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                                <color key="backgroundColor" name="cream"/>
+                                <color key="tintColor" name="blue"/>
+                                <items>
+                                    <navigationItem title="Giroscope" id="kkv-e1-sYe"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NfC-Cr-p73" firstAttribute="leading" secondItem="MzS-Wd-YJw" secondAttribute="leading" id="8Ou-O0-TCe"/>
+                            <constraint firstItem="5h4-AW-kH6" firstAttribute="trailing" secondItem="NfC-Cr-p73" secondAttribute="trailing" id="g3u-PJ-nHA"/>
+                            <constraint firstItem="NfC-Cr-p73" firstAttribute="top" secondItem="5h4-AW-kH6" secondAttribute="top" id="m0j-KI-S1L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5h4-AW-kH6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Giro" image="compass" id="a6p-kt-l8I"/>
@@ -87,7 +132,22 @@
                     <view key="view" contentMode="scaleToFill" id="rUY-Kc-ra0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWx-jP-UG9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                                <color key="backgroundColor" name="cream"/>
+                                <color key="tintColor" name="blue"/>
+                                <items>
+                                    <navigationItem title="Pedometer" id="MBp-Tc-OD2"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hWx-jP-UG9" firstAttribute="top" secondItem="quX-Pc-pFc" secondAttribute="top" id="JxF-bT-Uhv"/>
+                            <constraint firstItem="hWx-jP-UG9" firstAttribute="leading" secondItem="quX-Pc-pFc" secondAttribute="leading" id="l5B-W5-28n"/>
+                            <constraint firstItem="hWx-jP-UG9" firstAttribute="trailing" secondItem="quX-Pc-pFc" secondAttribute="trailing" id="rHZ-Dz-res"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="quX-Pc-pFc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pedometer" image="following" id="9Ru-OF-smd"/>
