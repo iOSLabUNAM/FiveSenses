@@ -14,6 +14,10 @@
 		3055034E2177E759006C43A2 /* FiveSensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055034D2177E759006C43A2 /* FiveSensesTests.swift */; };
 		3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035821782686006C43A2 /* AccelerometerHandler.swift */; };
 		3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035C21782910006C43A2 /* AccelerometerViewController.swift */; };
+		3055035F21783A08006C43A2 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035E21783A08006C43A2 /* GyroscopeViewController.swift */; };
+		3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036021783B56006C43A2 /* MagnetometerViewController.swift */; };
+		3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036321783BE9006C43A2 /* RunnerButton.swift */; };
+		3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036521783F7B006C43A2 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		3055034F2177E759006C43A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3055035821782686006C43A2 /* AccelerometerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerHandler.swift; sourceTree = "<group>"; };
 		3055035C21782910006C43A2 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		3055035E21783A08006C43A2 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
+		3055036021783B56006C43A2 /* MagnetometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewController.swift; sourceTree = "<group>"; };
+		3055036321783BE9006C43A2 /* RunnerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerButton.swift; sourceTree = "<group>"; };
+		3055036521783F7B006C43A2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			children = (
 				3055035B2178276C006C43A2 /* Handlers */,
 				3055035A21782764006C43A2 /* Controllers */,
+				3055036221783BB1006C43A2 /* Views */,
 				305503362177E758006C43A2 /* AppDelegate.swift */,
 				3055033C2177E758006C43A2 /* Main.storyboard */,
 				3055033F2177E759006C43A2 /* Assets.xcassets */,
@@ -103,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				3055035C21782910006C43A2 /* AccelerometerViewController.swift */,
+				3055035E21783A08006C43A2 /* GyroscopeViewController.swift */,
+				3055036021783B56006C43A2 /* MagnetometerViewController.swift */,
+				3055036521783F7B006C43A2 /* LocationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +125,14 @@
 				3055035821782686006C43A2 /* AccelerometerHandler.swift */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		3055036221783BB1006C43A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3055036321783BE9006C43A2 /* RunnerButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */,
 				3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */,
+				3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */,
 				3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */,
+				3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */,
+				3055035F21783A08006C43A2 /* GyroscopeViewController.swift in Sources */,
 				305503372177E758006C43A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

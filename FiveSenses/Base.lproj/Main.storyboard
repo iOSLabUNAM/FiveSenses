@@ -72,7 +72,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qys-2g-8aX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qys-2g-8aX" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -120,7 +120,7 @@
         <!--Location-->
         <scene sceneID="xt4-eW-PCo">
             <objects>
-                <viewController id="LWH-bX-rvu" sceneMemberID="viewController">
+                <viewController id="LWH-bX-rvu" customClass="LocationViewController" customModule="FiveSenses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m08-Q7-kwy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                     <navigationItem title="Location" id="RLh-rg-Pym"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzG-N9-wmj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzG-N9-wmj" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -141,6 +141,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" name="cream"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTaped:" destination="LWH-bX-rvu" eventType="touchUpInside" id="Lqq-Bl-YtT"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QJF-2i-wgZ">
                                 <rect key="frame" x="10" y="211.5" width="355" height="244"/>
@@ -262,15 +265,21 @@
                         <viewLayoutGuide key="safeArea" id="BZX-Tz-bo7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="geo_fence" id="E50-RK-Ei6"/>
+                    <connections>
+                        <outlet property="altLbl" destination="9ek-nf-e0A" id="y45-66-Ggb"/>
+                        <outlet property="latLbl" destination="3Xi-PR-fHL" id="ydp-ZU-0Sc"/>
+                        <outlet property="lonLbl" destination="idB-G6-PY4" id="6in-Xs-sH1"/>
+                        <outlet property="startBtn" destination="UzG-N9-wmj" id="pAE-cJ-KM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ock-IK-mxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="861.60000000000002" y="404.34782608695656"/>
         </scene>
-        <!--Giroscope-->
+        <!--Gyroscope-->
         <scene sceneID="Nvn-Xr-ekW">
             <objects>
-                <viewController id="a62-X0-uzL" sceneMemberID="viewController">
+                <viewController id="a62-X0-uzL" customClass="GyroscopeViewController" customModule="FiveSenses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MzS-Wd-YJw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +288,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                                 <color key="tintColor" name="blue"/>
                                 <items>
-                                    <navigationItem title="Giroscope" id="kkv-e1-sYe"/>
+                                    <navigationItem title="Gyroscope" id="kkv-e1-sYe"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rotation" translatesAutoresizingMaskIntoConstraints="NO" id="cBe-fC-grJ">
@@ -301,7 +310,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-ST-ZkE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-ST-ZkE" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -310,6 +319,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" name="cream"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTaped:" destination="a62-X0-uzL" eventType="touchUpInside" id="l8s-Dg-pbg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggk-ZL-LTa">
                                 <rect key="frame" x="25" y="356" width="57" height="21"/>
@@ -337,7 +349,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5h4-AW-kH6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Giroscope" image="syncronize" id="a6p-kt-l8I"/>
+                    <tabBarItem key="tabBarItem" title="Gyroscope" image="syncronize" id="a6p-kt-l8I"/>
+                    <connections>
+                        <outlet property="startBtn" destination="PFX-ST-ZkE" id="Rct-kN-01K"/>
+                        <outlet property="xLabel" destination="Y4G-5b-t75" id="ZfQ-v9-Swl"/>
+                        <outlet property="yLabel" destination="0rI-mM-l4v" id="0a6-jk-G0x"/>
+                        <outlet property="zLabel" destination="ggk-ZL-LTa" id="dzv-eU-Hb5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHK-tE-k7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +364,7 @@
         <!--Magnetometer-->
         <scene sceneID="rJT-0m-U4b">
             <objects>
-                <viewController id="3Ts-SD-sBS" sceneMemberID="viewController">
+                <viewController id="3Ts-SD-sBS" customClass="MagnetometerViewController" customModule="FiveSenses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rUY-Kc-ra0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,7 +376,7 @@
                                     <navigationItem title="Magnetometer" id="MBp-Tc-OD2"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iln-YL-Efk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iln-YL-Efk" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -367,6 +385,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" name="cream"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTaped:" destination="3Ts-SD-sBS" eventType="touchUpInside" id="kLW-eH-Pfp"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueCompas" translatesAutoresizingMaskIntoConstraints="NO" id="aax-8h-88w">
                                 <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
@@ -390,6 +411,10 @@
                         <viewLayoutGuide key="safeArea" id="quX-Pc-pFc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Magnetometer" image="compas" id="9Ru-OF-smd"/>
+                    <connections>
+                        <outlet property="compasIV" destination="aax-8h-88w" id="V0k-Hp-rw1"/>
+                        <outlet property="startBtn" destination="iln-YL-Efk" id="VqW-F8-Ehp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGO-nQ-RSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
