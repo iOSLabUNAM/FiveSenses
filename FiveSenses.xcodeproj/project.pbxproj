@@ -18,6 +18,7 @@
 		3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036021783B56006C43A2 /* MagnetometerViewController.swift */; };
 		3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036321783BE9006C43A2 /* RunnerButton.swift */; };
 		3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036521783F7B006C43A2 /* LocationViewController.swift */; };
+		3076FF482178FC4C00635174 /* Double+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076FF472178FC4C00635174 /* Double+Present.swift */; };
 		30BB869821785898003F97DB /* MapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB869721785898003F97DB /* MapkitViewController.swift */; };
 		30BB869B21785928003F97DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB869A21785928003F97DB /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		3055036021783B56006C43A2 /* MagnetometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewController.swift; sourceTree = "<group>"; };
 		3055036321783BE9006C43A2 /* RunnerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerButton.swift; sourceTree = "<group>"; };
 		3055036521783F7B006C43A2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		3076FF472178FC4C00635174 /* Double+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Present.swift"; sourceTree = "<group>"; };
 		30BB869721785898003F97DB /* MapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapkitViewController.swift; sourceTree = "<group>"; };
 		30BB869A21785928003F97DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				3055033F2177E759006C43A2 /* Assets.xcassets */,
 				305503412177E759006C43A2 /* LaunchScreen.storyboard */,
 				305503442177E759006C43A2 /* Info.plist */,
+				3076FF472178FC4C00635174 /* Double+Present.swift */,
 			);
 			path = FiveSenses;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */,
 				3055035F21783A08006C43A2 /* GyroscopeViewController.swift in Sources */,
 				305503372177E758006C43A2 /* AppDelegate.swift in Sources */,
+				3076FF482178FC4C00635174 /* Double+Present.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

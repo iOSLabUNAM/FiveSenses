@@ -43,13 +43,8 @@ class AccelerometerViewController: UIViewController {
     }
 
     func updateData(_ data: CMAccelerometerData) {
-        xLabel.text = format(data.acceleration.x)
-        yLabel.text = format(data.acceleration.y)
-        zLabel.text = format(data.acceleration.z)
-    }
-
-    func format(_ value: Double, precition: Int = 1000) -> String {
-        let trimed = Float(value * Double(precition)) / Float(precition)
-        return "\(trimed)"
+        xLabel.text = data.acceleration.x.format()
+        yLabel.text = data.acceleration.y.format()
+        zLabel.text = data.acceleration.z.format()
     }
 }
