@@ -37,7 +37,10 @@ class AccelerometerViewController: UIViewController {
     var timer: Timer?
     var frecuency = 1.0 / 10.0 // 10Hz
     @IBAction func startTaped(_ sender: Any) {
-        guard motionManager.isAccelerometerAvailable else { return }
+        guard motionManager.isAccelerometerAvailable else {
+            print("Accelerometer is not available")
+            return
+        }
         if startBtn.switchState() {
             motionManager.accelerometerUpdateInterval = frecuency
             motionManager.startAccelerometerUpdates()

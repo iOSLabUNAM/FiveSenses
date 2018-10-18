@@ -37,6 +37,10 @@ class GyroscopeViewController: UIViewController {
     var timer: Timer?
     var frecuency = 1.0 / 10.0 // 10Hz
     @IBAction func startTaped(_ sender: Any) {
+        guard motionManager.isGyroAvailable else {
+            print("Gyro is not available")
+            return
+        }
         if startBtn.switchState() {
             motionManager.gyroUpdateInterval = frecuency
             motionManager.startGyroUpdates()
