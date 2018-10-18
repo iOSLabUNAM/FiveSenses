@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        AccelerometerHandler.shared.stop()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -37,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        AccelerometerHandler.shared.stop()
     }
 
 }

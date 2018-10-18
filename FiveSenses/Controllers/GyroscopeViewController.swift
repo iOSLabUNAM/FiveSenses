@@ -35,15 +35,16 @@ class GyroscopeViewController: UIViewController {
     }
 
     var timer: Timer?
-    var frecuency = 1.0 / 60.0 // 60Hz
+    var frecuency = 1.0 / 10.0 // 10Hz
     @IBAction func startTaped(_ sender: Any) {
         if startBtn.switchState() {
             motionManager.gyroUpdateInterval = frecuency
-            self.timer = Timer(fire: Date(), interval: frecuency, repeats: true) { [weak self] _ in
-                guard let data = self?.motionManager.gyroData else { return }
-                self?.xLabel.text = data.rotationRate.x.format()
-                self?.yLabel.text = data.rotationRate.y.format()
-                self?.zLabel.text = data.rotationRate.z.format()
+            motionManager.startGyroUpdates()
+            self.timer = Timer(fire: Date(), interval: frecuency, repeats: true) {  _ in
+                guard let data = self.motionManager.gyroData else { return }
+                self.xLabel.text = data.rotationRate.x.format()
+                self.yLabel.text = data.rotationRate.y.format()
+                self.zLabel.text = data.rotationRate.z.format()
             }
             RunLoop.current.add(self.timer!, forMode: RunLoop.Mode.default)
         } else {
