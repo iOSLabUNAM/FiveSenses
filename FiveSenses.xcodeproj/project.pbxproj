@@ -12,6 +12,8 @@
 		305503402177E759006C43A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3055033F2177E759006C43A2 /* Assets.xcassets */; };
 		305503432177E759006C43A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305503412177E759006C43A2 /* LaunchScreen.storyboard */; };
 		3055034E2177E759006C43A2 /* FiveSensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055034D2177E759006C43A2 /* FiveSensesTests.swift */; };
+		3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035821782686006C43A2 /* AccelerometerHandler.swift */; };
+		3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035C21782910006C43A2 /* AccelerometerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		305503492177E759006C43A2 /* FiveSensesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSensesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3055034D2177E759006C43A2 /* FiveSensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSensesTests.swift; sourceTree = "<group>"; };
 		3055034F2177E759006C43A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3055035821782686006C43A2 /* AccelerometerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerHandler.swift; sourceTree = "<group>"; };
+		3055035C21782910006C43A2 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 		305503352177E758006C43A2 /* FiveSenses */ = {
 			isa = PBXGroup;
 			children = (
+				3055035B2178276C006C43A2 /* Handlers */,
+				3055035A21782764006C43A2 /* Controllers */,
 				305503362177E758006C43A2 /* AppDelegate.swift */,
 				3055033C2177E758006C43A2 /* Main.storyboard */,
 				3055033F2177E759006C43A2 /* Assets.xcassets */,
@@ -91,6 +97,22 @@
 				3055034F2177E759006C43A2 /* Info.plist */,
 			);
 			path = FiveSensesTests;
+			sourceTree = "<group>";
+		};
+		3055035A21782764006C43A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3055035C21782910006C43A2 /* AccelerometerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3055035B2178276C006C43A2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3055035821782686006C43A2 /* AccelerometerHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */,
+				3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */,
 				305503372177E758006C43A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

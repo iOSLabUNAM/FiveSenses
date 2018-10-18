@@ -35,7 +35,7 @@
         <!--Acelerometer-->
         <scene sceneID="8YV-Z2-wEp">
             <objects>
-                <viewController id="5hH-Yo-N42" sceneMemberID="viewController">
+                <viewController id="5hH-Yo-N42" customClass="AccelerometerViewController" customModule="FiveSenses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKx-8q-ICd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,6 +81,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" name="cream"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTaped:" destination="5hH-Yo-N42" eventType="touchUpInside" id="gXw-nY-3in"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,6 +106,12 @@
                         <viewLayoutGuide key="safeArea" id="516-cG-iY7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acelerometer" image="dashboard" id="cDP-HY-rTU"/>
+                    <connections>
+                        <outlet property="startBtn" destination="qys-2g-8aX" id="Cbg-IP-tHz"/>
+                        <outlet property="xLabel" destination="yWB-wz-k7Q" id="VH9-bA-og2"/>
+                        <outlet property="yLabel" destination="ULh-uk-6Pm" id="F5D-b4-Ysf"/>
+                        <outlet property="zLabel" destination="zHb-Dq-mNL" id="aKJ-Th-YgU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQR-GW-r9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,7 +149,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U20-9y-Y0w">
-                                                <rect key="frame" x="8" y="8" width="93.5" height="29"/>
+                                                <rect key="frame" x="8" y="8" width="327" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="29" id="KoC-lH-F2A"/>
                                                 </constraints>
@@ -160,9 +169,10 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="3Xi-PR-fHL" secondAttribute="trailing" constant="8" id="2f0-lg-BWu"/>
+                                            <constraint firstAttribute="trailing" secondItem="U20-9y-Y0w" secondAttribute="trailing" constant="20" id="PjH-15-LGI"/>
                                             <constraint firstAttribute="height" constant="80" id="WuD-Yj-JpK"/>
                                             <constraint firstItem="U20-9y-Y0w" firstAttribute="leading" secondItem="qPO-uO-cRu" secondAttribute="leading" constant="8" id="gI6-Pu-hFd"/>
-                                            <constraint firstItem="3Xi-PR-fHL" firstAttribute="leading" secondItem="qPO-uO-cRu" secondAttribute="leading" constant="37" id="gWO-fB-QiG"/>
+                                            <constraint firstItem="3Xi-PR-fHL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="qPO-uO-cRu" secondAttribute="leading" constant="37" id="gWO-fB-QiG"/>
                                             <constraint firstItem="U20-9y-Y0w" firstAttribute="top" secondItem="qPO-uO-cRu" secondAttribute="top" constant="8" id="qvj-q6-ZVG"/>
                                             <constraint firstItem="3Xi-PR-fHL" firstAttribute="top" secondItem="U20-9y-Y0w" secondAttribute="bottom" constant="8" id="zTA-pJ-uQ4"/>
                                         </constraints>
@@ -171,7 +181,7 @@
                                         <rect key="frame" x="0.0" y="82" width="355" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDJ-Gw-odn">
-                                                <rect key="frame" x="8" y="8" width="100" height="29"/>
+                                                <rect key="frame" x="8" y="8" width="337" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="29" id="1ZC-3g-eqS"/>
                                                 </constraints>
@@ -195,14 +205,14 @@
                                             <constraint firstItem="dDJ-Gw-odn" firstAttribute="top" secondItem="rPe-Az-89P" secondAttribute="top" constant="8" id="QkC-cD-7aQ"/>
                                             <constraint firstItem="idB-G6-PY4" firstAttribute="top" secondItem="dDJ-Gw-odn" secondAttribute="bottom" constant="8" id="VAS-mo-SnO"/>
                                             <constraint firstItem="dDJ-Gw-odn" firstAttribute="leading" secondItem="rPe-Az-89P" secondAttribute="leading" constant="8" id="d1H-Jt-t9d"/>
-                                            <constraint firstItem="idB-G6-PY4" firstAttribute="leading" secondItem="rPe-Az-89P" secondAttribute="leading" constant="37" id="iG9-HI-qFu"/>
+                                            <constraint firstItem="idB-G6-PY4" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rPe-Az-89P" secondAttribute="leading" constant="37" id="iG9-HI-qFu"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-wh-uLc">
                                         <rect key="frame" x="0.0" y="164" width="355" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPm-44-hxd">
-                                                <rect key="frame" x="8" y="8" width="89.5" height="29"/>
+                                                <rect key="frame" x="8" y="8" width="327" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="29" id="Qvf-B6-6PN"/>
                                                 </constraints>
@@ -222,8 +232,9 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="VPm-44-hxd" firstAttribute="leading" secondItem="dTQ-wh-uLc" secondAttribute="leading" constant="8" id="8qJ-WW-ymZ"/>
-                                            <constraint firstItem="9ek-nf-e0A" firstAttribute="leading" secondItem="dTQ-wh-uLc" secondAttribute="leading" constant="37" id="ZW1-Hu-DQW"/>
+                                            <constraint firstItem="9ek-nf-e0A" firstAttribute="leading" relation="lessThanOrEqual" secondItem="dTQ-wh-uLc" secondAttribute="leading" constant="37" id="ZW1-Hu-DQW"/>
                                             <constraint firstItem="VPm-44-hxd" firstAttribute="top" secondItem="dTQ-wh-uLc" secondAttribute="top" constant="8" id="aDV-cC-ZOS"/>
+                                            <constraint firstAttribute="trailing" secondItem="VPm-44-hxd" secondAttribute="trailing" constant="20" id="f5s-tH-w3C"/>
                                             <constraint firstAttribute="height" constant="80" id="lrK-Ss-HD7"/>
                                             <constraint firstItem="9ek-nf-e0A" firstAttribute="top" secondItem="VPm-44-hxd" secondAttribute="bottom" constant="8" id="wjk-io-Ov4"/>
                                             <constraint firstAttribute="trailing" secondItem="9ek-nf-e0A" secondAttribute="trailing" constant="8" id="zuK-KF-gU2"/>
@@ -240,6 +251,7 @@
                             <constraint firstItem="rz3-7f-Kfr" firstAttribute="top" secondItem="BZX-Tz-bo7" secondAttribute="top" id="3Kx-Bq-BOo"/>
                             <constraint firstItem="QJF-2i-wgZ" firstAttribute="centerY" secondItem="m08-Q7-kwy" secondAttribute="centerY" id="4eI-Vy-m5I"/>
                             <constraint firstItem="BZX-Tz-bo7" firstAttribute="trailing" secondItem="QJF-2i-wgZ" secondAttribute="trailing" constant="10" id="BwS-kU-1ar"/>
+                            <constraint firstItem="BZX-Tz-bo7" firstAttribute="trailing" secondItem="dDJ-Gw-odn" secondAttribute="trailing" constant="20" id="MXF-Hn-wrr"/>
                             <constraint firstItem="UzG-N9-wmj" firstAttribute="trailing" secondItem="BZX-Tz-bo7" secondAttribute="trailing" id="RNf-OR-ReD"/>
                             <constraint firstItem="rz3-7f-Kfr" firstAttribute="trailing" secondItem="BZX-Tz-bo7" secondAttribute="trailing" id="egE-dF-R1K"/>
                             <constraint firstItem="UzG-N9-wmj" firstAttribute="leading" secondItem="BZX-Tz-bo7" secondAttribute="leading" id="iew-6V-P8v"/>
