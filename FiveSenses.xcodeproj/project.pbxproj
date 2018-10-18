@@ -18,6 +18,8 @@
 		3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036021783B56006C43A2 /* MagnetometerViewController.swift */; };
 		3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036321783BE9006C43A2 /* RunnerButton.swift */; };
 		3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036521783F7B006C43A2 /* LocationViewController.swift */; };
+		30BB869821785898003F97DB /* MapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB869721785898003F97DB /* MapkitViewController.swift */; };
+		30BB869B21785928003F97DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB869A21785928003F97DB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		3055036021783B56006C43A2 /* MagnetometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewController.swift; sourceTree = "<group>"; };
 		3055036321783BE9006C43A2 /* RunnerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerButton.swift; sourceTree = "<group>"; };
 		3055036521783F7B006C43A2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		30BB869721785898003F97DB /* MapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapkitViewController.swift; sourceTree = "<group>"; };
+		30BB869A21785928003F97DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BB869B21785928003F97DB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,7 @@
 				305503352177E758006C43A2 /* FiveSenses */,
 				3055034C2177E759006C43A2 /* FiveSensesTests */,
 				305503342177E758006C43A2 /* Products */,
+				30BB869921785928003F97DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +121,7 @@
 				3055035E21783A08006C43A2 /* GyroscopeViewController.swift */,
 				3055036021783B56006C43A2 /* MagnetometerViewController.swift */,
 				3055036521783F7B006C43A2 /* LocationViewController.swift */,
+				30BB869721785898003F97DB /* MapkitViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -133,6 +140,14 @@
 				3055036321783BE9006C43A2 /* RunnerButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30BB869921785928003F97DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30BB869A21785928003F97DB /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +253,7 @@
 			files = (
 				3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */,
 				3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */,
+				30BB869821785898003F97DB /* MapkitViewController.swift in Sources */,
 				3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */,
 				3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */,
 				3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */,

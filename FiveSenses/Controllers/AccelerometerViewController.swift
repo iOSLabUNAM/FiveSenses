@@ -20,6 +20,7 @@ class AccelerometerViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if startBtn.isActive() {
             _ = AccelerometerHandler.shared.start()
         }
@@ -29,6 +30,7 @@ class AccelerometerViewController: UIViewController {
         if startBtn.isActive() {
             AccelerometerHandler.shared.stop()
         }
+        super.viewWillDisappear(animated)
     }
 
     @IBAction func startTaped(_ sender: Any) {
