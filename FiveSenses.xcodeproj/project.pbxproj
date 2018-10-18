@@ -15,10 +15,11 @@
 		3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035821782686006C43A2 /* AccelerometerHandler.swift */; };
 		3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035C21782910006C43A2 /* AccelerometerViewController.swift */; };
 		3055035F21783A08006C43A2 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055035E21783A08006C43A2 /* GyroscopeViewController.swift */; };
-		3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036021783B56006C43A2 /* MagnetometerViewController.swift */; };
+		3055036121783B56006C43A2 /* CompasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036021783B56006C43A2 /* CompasViewController.swift */; };
 		3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036321783BE9006C43A2 /* RunnerButton.swift */; };
 		3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055036521783F7B006C43A2 /* LocationViewController.swift */; };
 		3076FF482178FC4C00635174 /* Double+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076FF472178FC4C00635174 /* Double+Present.swift */; };
+		3076FF4A2179076600635174 /* Double+Radiants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076FF492179076600635174 /* Double+Radiants.swift */; };
 		30BB869821785898003F97DB /* MapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB869721785898003F97DB /* MapkitViewController.swift */; };
 		30BB869B21785928003F97DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB869A21785928003F97DB /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -46,10 +47,11 @@
 		3055035821782686006C43A2 /* AccelerometerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerHandler.swift; sourceTree = "<group>"; };
 		3055035C21782910006C43A2 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
 		3055035E21783A08006C43A2 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
-		3055036021783B56006C43A2 /* MagnetometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewController.swift; sourceTree = "<group>"; };
+		3055036021783B56006C43A2 /* CompasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompasViewController.swift; sourceTree = "<group>"; };
 		3055036321783BE9006C43A2 /* RunnerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerButton.swift; sourceTree = "<group>"; };
 		3055036521783F7B006C43A2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		3076FF472178FC4C00635174 /* Double+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Present.swift"; sourceTree = "<group>"; };
+		3076FF492179076600635174 /* Double+Radiants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Radiants.swift"; sourceTree = "<group>"; };
 		30BB869721785898003F97DB /* MapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapkitViewController.swift; sourceTree = "<group>"; };
 		30BB869A21785928003F97DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 				305503412177E759006C43A2 /* LaunchScreen.storyboard */,
 				305503442177E759006C43A2 /* Info.plist */,
 				3076FF472178FC4C00635174 /* Double+Present.swift */,
+				3076FF492179076600635174 /* Double+Radiants.swift */,
 			);
 			path = FiveSenses;
 			sourceTree = "<group>";
@@ -122,7 +125,7 @@
 			children = (
 				3055035C21782910006C43A2 /* AccelerometerViewController.swift */,
 				3055035E21783A08006C43A2 /* GyroscopeViewController.swift */,
-				3055036021783B56006C43A2 /* MagnetometerViewController.swift */,
+				3055036021783B56006C43A2 /* CompasViewController.swift */,
 				3055036521783F7B006C43A2 /* LocationViewController.swift */,
 				30BB869721785898003F97DB /* MapkitViewController.swift */,
 			);
@@ -257,7 +260,8 @@
 				3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */,
 				3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */,
 				30BB869821785898003F97DB /* MapkitViewController.swift in Sources */,
-				3055036121783B56006C43A2 /* MagnetometerViewController.swift in Sources */,
+				3055036121783B56006C43A2 /* CompasViewController.swift in Sources */,
+				3076FF4A2179076600635174 /* Double+Radiants.swift in Sources */,
 				3055035921782686006C43A2 /* AccelerometerHandler.swift in Sources */,
 				3055036421783BE9006C43A2 /* RunnerButton.swift in Sources */,
 				3055035F21783A08006C43A2 /* GyroscopeViewController.swift in Sources */,

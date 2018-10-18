@@ -22,13 +22,13 @@ class GyroscopeViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if startBtn.switchState() {
+        if startBtn.isActive() {
             motionManager.startGyroUpdates()
         }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        if startBtn.switchState() {
+        if startBtn.isActive() {
             motionManager.stopGyroUpdates()
         }
         super.viewWillDisappear(animated)
@@ -39,7 +39,7 @@ class GyroscopeViewController: UIViewController {
     @IBAction func startTaped(_ sender: Any) {
         if startBtn.switchState() {
             motionManager.gyroUpdateInterval = frecuency
-            timer = Timer(fire: Date(), interval: frecuency, repeats: true) { [weak self] _ in
+            self.timer = Timer(fire: Date(), interval: frecuency, repeats: true) { [weak self] _ in
                 guard let data = self?.motionManager.gyroData else { return }
                 self?.xLabel.text = data.rotationRate.x.format()
                 self?.yLabel.text = data.rotationRate.y.format()
