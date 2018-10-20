@@ -1,0 +1,8 @@
+app_identifier("org.ezcurdia.FiveSenses") # The bundle identifier of your app
+apple_id("ing.ezcurdia@gmail.com") # Your Apple email address
+
+itc_team_id("118872064") # App Store Connect Team ID
+team_id("D3XL2U7DQC") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

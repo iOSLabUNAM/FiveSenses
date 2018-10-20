@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3010DFAB217AE2BD00D8B387 /* FiveSensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010DFAA217AE2BD00D8B387 /* FiveSensesUITests.swift */; };
+		3010DFB5217B738900D8B387 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010DFB4217B738900D8B387 /* SnapshotHelper.swift */; };
 		305503372177E758006C43A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305503362177E758006C43A2 /* AppDelegate.swift */; };
 		3055033E2177E758006C43A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3055033C2177E758006C43A2 /* Main.storyboard */; };
 		305503402177E759006C43A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3055033F2177E759006C43A2 /* Assets.xcassets */; };
@@ -24,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3010DFAD217AE2BD00D8B387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3055032B2177E758006C43A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 305503322177E758006C43A2;
+			remoteInfo = FiveSenses;
+		};
 		3055034A2177E759006C43A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3055032B2177E758006C43A2 /* Project object */;
@@ -34,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3010DFA8217AE2BD00D8B387 /* FiveSensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3010DFAA217AE2BD00D8B387 /* FiveSensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSensesUITests.swift; sourceTree = "<group>"; };
+		3010DFAC217AE2BD00D8B387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3010DFB4217B738900D8B387 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		305503332177E758006C43A2 /* FiveSenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveSenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305503362177E758006C43A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3055033D2177E758006C43A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3010DFA5217AE2BD00D8B387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		305503302177E758006C43A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,11 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3010DFA9217AE2BD00D8B387 /* FiveSensesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3010DFB4217B738900D8B387 /* SnapshotHelper.swift */,
+				3010DFAA217AE2BD00D8B387 /* FiveSensesUITests.swift */,
+				3010DFAC217AE2BD00D8B387 /* Info.plist */,
+			);
+			path = FiveSensesUITests;
+			sourceTree = "<group>";
+		};
 		3055032A2177E758006C43A2 = {
 			isa = PBXGroup;
 			children = (
 				305503352177E758006C43A2 /* FiveSenses */,
 				3055034C2177E759006C43A2 /* FiveSensesTests */,
+				3010DFA9217AE2BD00D8B387 /* FiveSensesUITests */,
 				305503342177E758006C43A2 /* Products */,
 				30BB869921785928003F97DB /* Frameworks */,
 			);
@@ -88,6 +119,7 @@
 			children = (
 				305503332177E758006C43A2 /* FiveSenses.app */,
 				305503492177E759006C43A2 /* FiveSensesTests.xctest */,
+				3010DFA8217AE2BD00D8B387 /* FiveSensesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +180,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3010DFA7217AE2BD00D8B387 /* FiveSensesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3010DFB1217AE2BD00D8B387 /* Build configuration list for PBXNativeTarget "FiveSensesUITests" */;
+			buildPhases = (
+				3010DFA4217AE2BD00D8B387 /* Sources */,
+				3010DFA5217AE2BD00D8B387 /* Frameworks */,
+				3010DFA6217AE2BD00D8B387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3010DFAE217AE2BD00D8B387 /* PBXTargetDependency */,
+			);
+			name = FiveSensesUITests;
+			productName = FiveSensesUITests;
+			productReference = 3010DFA8217AE2BD00D8B387 /* FiveSensesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		305503322177E758006C43A2 /* FiveSenses */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305503522177E759006C43A2 /* Build configuration list for PBXNativeTarget "FiveSenses" */;
@@ -193,6 +243,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = fi.unam.mx;
 				TargetAttributes = {
+					3010DFA7217AE2BD00D8B387 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 305503322177E758006C43A2;
+					};
 					305503322177E758006C43A2 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -217,11 +271,19 @@
 			targets = (
 				305503322177E758006C43A2 /* FiveSenses */,
 				305503482177E759006C43A2 /* FiveSensesTests */,
+				3010DFA7217AE2BD00D8B387 /* FiveSensesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3010DFA6217AE2BD00D8B387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		305503312177E758006C43A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +304,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3010DFA4217AE2BD00D8B387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3010DFAB217AE2BD00D8B387 /* FiveSensesUITests.swift in Sources */,
+				3010DFB5217B738900D8B387 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3055032F2177E758006C43A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +340,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3010DFAE217AE2BD00D8B387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 305503322177E758006C43A2 /* FiveSenses */;
+			targetProxy = 3010DFAD217AE2BD00D8B387 /* PBXContainerItemProxy */;
+		};
 		3055034B2177E759006C43A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 305503322177E758006C43A2 /* FiveSenses */;
@@ -296,6 +372,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3010DFAF217AE2BD00D8B387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3XL2U7DQC;
+				INFOPLIST_FILE = FiveSensesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.ezcurdia.FiveSensesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FiveSenses;
+			};
+			name = Debug;
+		};
+		3010DFB0217AE2BD00D8B387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3XL2U7DQC;
+				INFOPLIST_FILE = FiveSensesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.ezcurdia.FiveSensesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FiveSenses;
+			};
+			name = Release;
+		};
 		305503502177E759006C43A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -493,6 +607,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3010DFB1217AE2BD00D8B387 /* Build configuration list for PBXNativeTarget "FiveSensesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3010DFAF217AE2BD00D8B387 /* Debug */,
+				3010DFB0217AE2BD00D8B387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3055032E2177E758006C43A2 /* Build configuration list for PBXProject "FiveSenses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
