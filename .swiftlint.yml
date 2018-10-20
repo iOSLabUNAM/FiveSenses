@@ -1,0 +1,5 @@
+excluded:
+  - Pods
+  - WabbitTests
+  - WabbitUITests
+line_length: 160
