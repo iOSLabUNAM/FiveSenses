@@ -13,6 +13,7 @@ class CompasViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var startBtn: RunnerButton!
     @IBOutlet weak var compasIV: UIImageView!
     let locationManager = CLLocationManager()
+    var lastLocation = CLLocation()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +36,14 @@ class CompasViewController: UIViewController, CLLocationManagerDelegate {
         super.viewWillAppear(animated)
         if startBtn.isActive() {
             locationManager.startUpdatingHeading()
+            locationManager.startUpdatingLocation()
         }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         if startBtn.isActive() {
             locationManager.stopUpdatingHeading()
+            locationManager.stopUpdatingLocation()
         }
         super.viewWillDisappear(animated)
     }
@@ -48,16 +51,25 @@ class CompasViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func startTaped(_ sender: Any) {
         if startBtn.switchState() {
             locationManager.startUpdatingHeading()
+            locationManager.startUpdatingLocation()
         } else {
             locationManager.stopUpdatingHeading()
+            locationManager.stopUpdatingLocation()
         }
     }
 
     // MARK: CLLocationManagerDelegate methods
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         UIView.animate(withDuration: 0.5) {
-            let angle = newHeading.trueHeading.toRadians
-            self.compasIV.transform = CGAffineTransform(rotationAngle: CGFloat(angle)) // rotate the picture
+            let location = self.lastLocation
+            let latestBearing = CGFloat(location.bearingToLocationRadian(location))
+            let latestHeading = CGFloat(newHeading.trueHeading.toRadians)
+            self.compasIV.transform = CGAffineTransform(rotationAngle: latestBearing - latestHeading)
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        self.lastLocation = location
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3010DFAB217AE2BD00D8B387 /* FiveSensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010DFAA217AE2BD00D8B387 /* FiveSensesUITests.swift */; };
 		3010DFB5217B738900D8B387 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010DFB4217B738900D8B387 /* SnapshotHelper.swift */; };
+		302495FD217E300600A0D675 /* CLLocations+Bearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302495FC217E300600A0D675 /* CLLocations+Bearing.swift */; };
 		305503372177E758006C43A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305503362177E758006C43A2 /* AppDelegate.swift */; };
 		3055033E2177E758006C43A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3055033C2177E758006C43A2 /* Main.storyboard */; };
 		305503402177E759006C43A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3055033F2177E759006C43A2 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		3010DFAA217AE2BD00D8B387 /* FiveSensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSensesUITests.swift; sourceTree = "<group>"; };
 		3010DFAC217AE2BD00D8B387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3010DFB4217B738900D8B387 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		302495FC217E300600A0D675 /* CLLocations+Bearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocations+Bearing.swift"; sourceTree = "<group>"; };
 		305503332177E758006C43A2 /* FiveSenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveSenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305503362177E758006C43A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3055033D2177E758006C43A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				305503442177E759006C43A2 /* Info.plist */,
 				3076FF472178FC4C00635174 /* Double+Present.swift */,
 				3076FF492179076600635174 /* Double+Radiants.swift */,
+				302495FC217E300600A0D675 /* CLLocations+Bearing.swift */,
 			);
 			path = FiveSenses;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302495FD217E300600A0D675 /* CLLocations+Bearing.swift in Sources */,
 				3055036621783F7B006C43A2 /* LocationViewController.swift in Sources */,
 				3055035D21782910006C43A2 /* AccelerometerViewController.swift in Sources */,
 				30BB869821785898003F97DB /* MapkitViewController.swift in Sources */,
