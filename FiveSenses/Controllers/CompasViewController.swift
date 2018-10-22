@@ -67,7 +67,7 @@ class CompasViewController: UIViewController, CLLocationManagerDelegate {
             self.compasIV.transform = CGAffineTransform(rotationAngle: latestBearing - latestHeading)
         }
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         self.lastLocation = location

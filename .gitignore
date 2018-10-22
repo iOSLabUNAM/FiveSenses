@@ -201,3 +201,5 @@ playground.xcworkspace
 
 
 # End of https://www.gitignore.io/api/osx,swift,xcode,fastlane,cocoapods,objective-c
+.env
+provisioning/
