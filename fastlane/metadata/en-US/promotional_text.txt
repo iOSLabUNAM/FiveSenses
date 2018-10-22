@@ -1,1 +1,1 @@
-
+Teach the usage of Core Location and Core Motion in a simple way.

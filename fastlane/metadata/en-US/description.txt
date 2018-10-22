@@ -1,1 +1,3 @@
+Open source project to teach students the use of CoreMotion and CoreLocation in simple examples that allow illustrating the axes location and requirements while using sensors.
 
+https://github.com/iosLabUNAM/fivesenses

@@ -21,6 +21,11 @@ or alternatively using `brew cask install fastlane`
 fastlane ios lint
 ```
 Autocorrect swfit code style with swiftlint
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
 ### ios test
 ```
 fastlane ios test
