@@ -396,8 +396,8 @@
                                     <action selector="startTaped:" destination="a62-X0-uzL" eventType="touchUpInside" id="l8s-Dg-pbg"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="axes" translatesAutoresizingMaskIntoConstraints="NO" id="WiM-1P-uO2">
-                                <rect key="frame" x="0.0" y="96" width="375" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rotation" translatesAutoresizingMaskIntoConstraints="NO" id="WiM-1P-uO2">
+                                <rect key="frame" x="0.0" y="96" width="375.00000000000011" height="240.00000000000011"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="VFq-zf-etB"/>
@@ -658,6 +658,7 @@
         <image name="dashboard" width="30" height="30"/>
         <image name="geo_fence" width="30" height="30"/>
         <image name="globe" width="30" height="30"/>
+        <image name="rotation" width="389" height="463.5"/>
         <image name="syncronize" width="30" height="30"/>
         <namedColor name="blue">
             <color red="0.92325129533678751" green="0.5481070307676289" blue="0.1911063746501612" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
