@@ -29,6 +29,8 @@ class CompasViewController: UIViewController, CLLocationManagerDelegate {
             print("Disable location features")
         case .authorizedWhenInUse, .authorizedAlways:
             print("Enable location features")
+        @unknown default:
+            fatalError()
         }
     }
 
