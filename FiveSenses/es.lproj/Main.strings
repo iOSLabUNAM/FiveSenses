@@ -1,0 +1,105 @@
+
+/* Class = "UITabBarItem"; title = "Maps"; ObjectID = "12l-Oy-kFm"; */
+"12l-Oy-kFm.title" = "Mapas";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "2F6-it-rGv"; */
+"2F6-it-rGv.text" = "0.0000000000";
+
+/* Class = "UILabel"; text = "X Axis"; ObjectID = "2Pn-fS-kz7"; */
+"2Pn-fS-kz7.text" = "Eje coordenado X";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "2Ze-ft-eSz"; */
+"2Ze-ft-eSz.text" = "0.0000000000";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "3Xi-PR-fHL"; */
+"3Xi-PR-fHL.text" = "0.0000000000";
+
+/* Class = "UILabel"; text = "X Rotation"; ObjectID = "3ik-y7-Ss3"; */
+"3ik-y7-Ss3.text" = "Eje de rotacion X";
+
+/* Class = "UILabel"; text = "Z Rotation"; ObjectID = "5ae-a0-0vN"; */
+"5ae-a0-0vN.text" = "Eje de rotacion Z";
+
+/* Class = "UITabBarItem"; title = "Compas"; ObjectID = "9Ru-OF-smd"; */
+"9Ru-OF-smd.title" = "Compas";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "9Yj-dV-qcd"; */
+"9Yj-dV-qcd.text" = "0.0000000000";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "9ek-nf-e0A"; */
+"9ek-nf-e0A.text" = "0.0000000000";
+
+/* Class = "UINavigationItem"; title = "MapKit"; ObjectID = "CTj-gn-Z36"; */
+"CTj-gn-Z36.title" = "MapKit";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "DMD-Z0-ido"; */
+"DMD-Z0-ido.text" = "0.0000000000";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "DuM-h8-Mnw"; */
+"DuM-h8-Mnw.text" = "0.0000000000";
+
+/* Class = "UITabBarItem"; title = "Location"; ObjectID = "E50-RK-Ei6"; */
+"E50-RK-Ei6.title" = "Ubicacion";
+
+/* Class = "UINavigationItem"; title = "Acelerometer"; ObjectID = "LIh-6d-sHc"; */
+"LIh-6d-sHc.title" = "Acelerometro";
+
+/* Class = "UINavigationItem"; title = "Compas"; ObjectID = "MBp-Tc-OD2"; */
+"MBp-Tc-OD2.title" = "Compas";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "PFX-ST-ZkE"; */
+"PFX-ST-ZkE.normalTitle" = "Comenzar";
+
+/* Class = "UINavigationItem"; title = "Location"; ObjectID = "RLh-rg-Pym"; */
+"RLh-rg-Pym.title" = "Localizacion";
+
+/* Class = "UILabel"; text = "Latitude"; ObjectID = "U20-9y-Y0w"; */
+"U20-9y-Y0w.text" = "Latitud";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "UzG-N9-wmj"; */
+"UzG-N9-wmj.normalTitle" = "Comenzar";
+
+/* Class = "UILabel"; text = "Altitude"; ObjectID = "VPm-44-hxd"; */
+"VPm-44-hxd.text" = "Altitud";
+
+/* Class = "UITabBarItem"; title = "Gyroscope"; ObjectID = "a6p-kt-l8I"; */
+"a6p-kt-l8I.title" = "Gyroscopio";
+
+/* Class = "UISegmentedControl"; aJG-42-QM6.segmentTitles[0] = "Standard"; ObjectID = "aJG-42-QM6"; */
+"aJG-42-QM6.segmentTitles[0]" = "Estandard";
+
+/* Class = "UISegmentedControl"; aJG-42-QM6.segmentTitles[1] = "Satelite"; ObjectID = "aJG-42-QM6"; */
+"aJG-42-QM6.segmentTitles[1]" = "Satelite";
+
+/* Class = "UISegmentedControl"; aJG-42-QM6.segmentTitles[2] = "Hybrid"; ObjectID = "aJG-42-QM6"; */
+"aJG-42-QM6.segmentTitles[2]" = "Hybrido";
+
+/* Class = "UITabBarItem"; title = "Acelerometer"; ObjectID = "cDP-HY-rTU"; */
+"cDP-HY-rTU.title" = "Acelerometro";
+
+/* Class = "UILabel"; text = "Z Axis"; ObjectID = "cbS-EZ-t9r"; */
+"cbS-EZ-t9r.text" = "Eje coordenado en Z";
+
+/* Class = "UILabel"; text = "Longitud"; ObjectID = "dDJ-Gw-odn"; */
+"dDJ-Gw-odn.text" = "Longitud";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "gO8-lp-cOW"; */
+"gO8-lp-cOW.text" = "0.0000000000";
+
+/* Class = "UILabel"; text = "0.0000000000"; ObjectID = "idB-G6-PY4"; */
+"idB-G6-PY4.text" = "0.0000000000";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "iln-YL-Efk"; */
+"iln-YL-Efk.normalTitle" = "Comenzar";
+
+/* Class = "UINavigationItem"; title = "Gyroscope"; ObjectID = "kkv-e1-sYe"; */
+"kkv-e1-sYe.title" = "Gyroscopio";
+
+/* Class = "UILabel"; text = "Y Rotation"; ObjectID = "mUu-2b-eA7"; */
+"mUu-2b-eA7.text" = "Eje de rotacion Y";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "qys-2g-8aX"; */
+"qys-2g-8aX.normalTitle" = "Comenzar";
+
+/* Class = "UILabel"; text = "Y Axis"; ObjectID = "sfO-c3-qzf"; */
+"sfO-c3-qzf.text" = "Eje coordenado Y";
