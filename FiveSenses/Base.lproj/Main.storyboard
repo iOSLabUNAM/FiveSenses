@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="blue"/>
                         <color key="selectedImageTintColor" name="blue"/>
                     </tabBar>
@@ -156,7 +157,7 @@
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="NoQ-dc-Kjc"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qys-2g-8aX" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qys-2g-8aX" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -170,7 +171,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="516-cG-iY7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="516-cG-iY7" firstAttribute="trailing" secondItem="pLh-3v-ACp" secondAttribute="trailing" constant="10" id="21I-6q-jyz"/>
                             <constraint firstItem="y4B-8q-tOb" firstAttribute="leading" secondItem="516-cG-iY7" secondAttribute="leading" id="23j-Q3-0JX"/>
@@ -188,7 +190,6 @@
                             <constraint firstItem="516-cG-iY7" firstAttribute="bottom" secondItem="qys-2g-8aX" secondAttribute="bottom" id="kqi-WD-0Qk"/>
                             <constraint firstItem="pLh-3v-ACp" firstAttribute="leading" secondItem="516-cG-iY7" secondAttribute="leading" constant="10" id="pG3-fr-e2T"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="516-cG-iY7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acelerometer" image="dashboard" id="cDP-HY-rTU"/>
                     <connections>
@@ -323,7 +324,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzG-N9-wmj" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzG-N9-wmj" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -337,7 +338,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BZX-Tz-bo7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rz3-7f-Kfr" firstAttribute="top" secondItem="BZX-Tz-bo7" secondAttribute="top" id="3Kx-Bq-BOo"/>
                             <constraint firstItem="yp8-mH-U4U" firstAttribute="top" secondItem="rz3-7f-Kfr" secondAttribute="bottom" id="5X2-A2-e9d"/>
@@ -353,7 +355,6 @@
                             <constraint firstItem="UzG-N9-wmj" firstAttribute="bottom" secondItem="BZX-Tz-bo7" secondAttribute="bottom" id="xn4-zZ-Icu"/>
                             <constraint firstItem="rz3-7f-Kfr" firstAttribute="leading" secondItem="BZX-Tz-bo7" secondAttribute="leading" id="z0G-vl-2tr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BZX-Tz-bo7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="geo_fence" id="E50-RK-Ei6"/>
                     <connections>
@@ -378,12 +379,12 @@
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfC-Cr-p73">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                 <color key="tintColor" name="blue"/>
-                                <color key="barTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" systemColor="secondaryLabelColor"/>
                                 <items>
                                     <navigationItem title="Gyroscope" id="kkv-e1-sYe"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-ST-ZkE" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-ST-ZkE" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -397,7 +398,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rotation" translatesAutoresizingMaskIntoConstraints="NO" id="WiM-1P-uO2">
-                                <rect key="frame" x="0.0" y="96" width="375.00000000000011" height="240.00000000000011"/>
+                                <rect key="frame" x="0.0" y="96" width="375" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="VFq-zf-etB"/>
@@ -507,7 +508,8 @@
                                 <viewLayoutGuide key="safeArea" id="aTt-Tv-sEi"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5h4-AW-kH6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PFX-ST-ZkE" firstAttribute="bottom" secondItem="5h4-AW-kH6" secondAttribute="bottom" id="2v7-1t-YFG"/>
                             <constraint firstItem="5h4-AW-kH6" firstAttribute="trailing" secondItem="dWw-cE-bmn" secondAttribute="trailing" constant="10" id="4e3-25-hB4"/>
@@ -522,7 +524,6 @@
                             <constraint firstItem="PFX-ST-ZkE" firstAttribute="trailing" secondItem="5h4-AW-kH6" secondAttribute="trailing" id="kqx-PK-5Hh"/>
                             <constraint firstItem="NfC-Cr-p73" firstAttribute="top" secondItem="5h4-AW-kH6" secondAttribute="top" id="m0j-KI-S1L"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5h4-AW-kH6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gyroscope" image="syncronize" id="a6p-kt-l8I"/>
                     <connections>
@@ -551,7 +552,7 @@
                                     <navigationItem title="Compas" id="MBp-Tc-OD2"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iln-YL-Efk" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iln-YL-Efk" customClass="RunnerButton" customModule="FiveSenses" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -572,7 +573,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="quX-Pc-pFc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aax-8h-88w" firstAttribute="centerY" secondItem="rUY-Kc-ra0" secondAttribute="centerY" id="98M-gk-MVm"/>
                             <constraint firstItem="iln-YL-Efk" firstAttribute="trailing" secondItem="quX-Pc-pFc" secondAttribute="trailing" id="EHM-6n-6a8"/>
@@ -583,7 +585,6 @@
                             <constraint firstItem="hWx-jP-UG9" firstAttribute="trailing" secondItem="quX-Pc-pFc" secondAttribute="trailing" id="rHZ-Dz-res"/>
                             <constraint firstItem="iln-YL-Efk" firstAttribute="bottom" secondItem="quX-Pc-pFc" secondAttribute="bottom" id="veT-3g-y7I"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="quX-Pc-pFc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compas" image="compas" id="9Ru-OF-smd"/>
                     <connections>
@@ -626,7 +627,8 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aTU-sE-faI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="N9O-8x-Xqo" firstAttribute="trailing" secondItem="aTU-sE-faI" secondAttribute="trailing" id="5ID-iK-LBH"/>
                             <constraint firstItem="aJG-42-QM6" firstAttribute="top" secondItem="LMv-dQ-JlV" secondAttribute="bottom" constant="15" id="K9w-8M-hGt"/>
@@ -639,7 +641,6 @@
                             <constraint firstItem="aTU-sE-faI" firstAttribute="trailing" secondItem="aJG-42-QM6" secondAttribute="trailing" constant="40" id="joC-hK-ss9"/>
                             <constraint firstItem="N9O-8x-Xqo" firstAttribute="bottom" secondItem="aTU-sE-faI" secondAttribute="bottom" id="qjH-hq-FCG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aTU-sE-faI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Maps" image="globe" id="12l-Oy-kFm"/>
                     <connections>
@@ -651,6 +652,7 @@
             <point key="canvasLocation" x="1696.8" y="403.44827586206901"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="blue"/>
     <resources>
         <image name="axes" width="385" height="440"/>
         <image name="blueCompas" width="240" height="240"/>
@@ -666,6 +668,11 @@
         <namedColor name="cream">
             <color red="1" green="0.95686274509803926" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
-    <color key="tintColor" name="blue"/>
 </document>

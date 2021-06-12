@@ -106,6 +106,16 @@
 			path = FiveSensesUITests;
 			sourceTree = "<group>";
 		};
+		304E06CD2674656B00A99128 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3076FF472178FC4C00635174 /* Double+Present.swift */,
+				3076FF492179076600635174 /* Double+Radiants.swift */,
+				302495FC217E300600A0D675 /* CLLocations+Bearing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3055032A2177E758006C43A2 = {
 			isa = PBXGroup;
 			children = (
@@ -130,16 +140,14 @@
 		305503352177E758006C43A2 /* FiveSenses */ = {
 			isa = PBXGroup;
 			children = (
-				3055035A21782764006C43A2 /* Controllers */,
+				3055035A21782764006C43A2 /* ViewControllers */,
 				3055036221783BB1006C43A2 /* Views */,
+				304E06CD2674656B00A99128 /* Extensions */,
+				3055033F2177E759006C43A2 /* Assets.xcassets */,
 				305503362177E758006C43A2 /* AppDelegate.swift */,
 				3055033C2177E758006C43A2 /* Main.storyboard */,
-				3055033F2177E759006C43A2 /* Assets.xcassets */,
 				305503412177E759006C43A2 /* LaunchScreen.storyboard */,
 				305503442177E759006C43A2 /* Info.plist */,
-				3076FF472178FC4C00635174 /* Double+Present.swift */,
-				3076FF492179076600635174 /* Double+Radiants.swift */,
-				302495FC217E300600A0D675 /* CLLocations+Bearing.swift */,
 			);
 			path = FiveSenses;
 			sourceTree = "<group>";
@@ -153,7 +161,7 @@
 			path = FiveSensesTests;
 			sourceTree = "<group>";
 		};
-		3055035A21782764006C43A2 /* Controllers */ = {
+		3055035A21782764006C43A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				3055035C21782910006C43A2 /* AccelerometerViewController.swift */,
@@ -162,7 +170,7 @@
 				3055036521783F7B006C43A2 /* LocationViewController.swift */,
 				30BB869721785898003F97DB /* MapkitViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3055036221783BB1006C43A2 /* Views */ = {
@@ -244,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = fi.unam.mx;
 				TargetAttributes = {
 					3010DFA7217AE2BD00D8B387 = {
@@ -447,6 +455,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -509,6 +518,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
